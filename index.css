@@ -1,0 +1,120 @@
+.container {
+    font-size: 25px;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    background-image: url("474554.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, minmax( 100px, auto));
+    gap: 30px;
+    padding: 20px;
+  }
+  .tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    border: 5px solid black;
+    border-radius: 30px;
+    transform-style: preserve-3d;
+    transition: transform 0.15s ease-out, background 0.3s;
+    will-change: transform;
+  }
+  .tile:hover {
+     background: rgba(0, 0, 0, 0.2);
+    color: rgba(217, 162, 162, 0.479); 
+  }
+  .square {
+    background-color: rgba(211, 41, 41, 0.504);
+  }
+  .circle {
+    background-color: rgba(255, 235, 205, 0.504);
+    border-radius: 50%;
+  }
+  
+  .top-bar {
+    background-color: rgba(151, 42, 165, 0.504);
+    border-radius: 95px;
+    grid-column: span 2;
+  }
+  
+  .text {
+    background-color: rgba(226, 122, 122, 0.504);
+    grid-column: span 3;
+  }
+
+  .rectangle {
+    background-color: rgba(89, 134, 89, 0.504); 
+    grid-column: span 3;
+  }
+
+  .left-rect {
+    background-color: rgba(121, 65, 114, 0.504);
+    height: 42%;
+    grid-area:2/4/3/6 ;
+    border-radius: 60px;
+  }
+  
+  .bar {
+    background-color: rgba(255, 182, 193, 0.504);
+    grid-area: 2/6/3/8;
+    height: 42%;
+    border-radius: 60px;
+  }
+  .right-rect {
+    background-color: rgba(116, 116, 224, 0.504);
+    grid-area: 2/4/3/8;
+    height: 42%;
+    align-self: end;
+    border-radius: 60px;
+  }
+  .message-box {
+    background-color: rgba(230, 136, 82, 0.504);
+    grid-column: span 2;
+  }
+  .v-bar {
+    background-color: rgba(179, 186, 122, 0.504);
+    
+  }
+  .mini-bar {
+    background-color: rgba(245, 245, 220, 0.504);
+    height: 20%;
+    width: 78%;
+    grid-area: 3/4/4/6;
+    justify-self: right;
+  }
+  .mini-rect {
+    background-color: rgba(165, 42, 42, 0.504);
+    height: 65%;
+    grid-area: 3/4/4/6;
+    align-self: end;
+    grid-area: 3/4/4/6;
+  }
+  .up-bar {
+    background-color: rgba(127, 255, 212, 0.504);
+    height: 42%;
+    grid-area: 3/6/4/7;
+
+  }
+  .down-bar {
+    background-color: rgba(255, 235, 205, 0.504);
+    height: 42%;
+    align-self: end;
+    grid-area: 3/6/4/7;
+  }
+  .circle-message {
+    background-color: rgba(210, 105, 30, 0.504);
+  }
+  .mini-citcle {
+    background-color: rgba(245, 222, 179, 0.504);
+    border-radius: 50%;
+    height: 20%;
+    width: 20%;
+    grid-area: 3/4/4/5;
+  }
+  .circle-message {
+    border-radius: 50%;
+  }
